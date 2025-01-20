@@ -1,12 +1,16 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { AddEmployeeComponent } from './add-employee/add-employee.component';
+import { ListEmployeeComponent } from './list-employee/list-employee.component';
+import { DataBindingComponent } from './data-binding/data-binding.component';
+
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, AddEmployeeComponent, ListEmployeeComponent , DataBindingComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'my-angular-app';
+  title = 'ToDo List';
 }

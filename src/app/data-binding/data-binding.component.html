@@ -1,0 +1,39 @@
+
+
+<div class="row">
+  <div class="col-4">
+One Way - From .ts to .html
+  </div>
+  <div class="col-4">
+
+  </div>
+  <div class="col-4">
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-4">
+  <div class="row">
+  <div class="col-4">
+    <!-- one way data Binding using -->
+    interpolation
+   <h3>{{ courseName }}</h3>
+   <input type="text" value="{{  courseName}}" placeholder="Enter Name ">
+   <input type="{{ inputType }}" class="type">
+   <div class="{{ myClassNames }}">Danger</div>
+  </div>
+</div>
+  </div>
+  <div class="col-4">
+    Prperty Binding
+    <div [class]="myClassNames">Success</div>
+    <input [type]="inputType" class="type">
+    <!-- Event Binding -->
+    <button class="btn btn-success" (click)="showAlert('Welcome To Data Binding');">Show Wlecome</button>
+  </div>
+  <div class="col-4">
+
+  </div>
+</div>
+
+
