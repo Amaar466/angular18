@@ -30,8 +30,24 @@ One Way - From .ts to .html
     <input [type]="inputType" class="type">
     <!-- Event Binding -->
     <button class="btn btn-success" (click)="showAlert('Welcome To Data Binding');">Show Wlecome</button>
+    <button class="btn btn-success" (click)="changeCourseName()">Change Course</button>
+
   </div>
   <div class="col-4">
+     <input type="text" [(ngModel)]="courseName" class="type"> - {{ courseName }}
+<input type="checkbox"  class="" [(ngModel)]="isPakistani">
+     <div >
+      <select [(ngModel)]="stateName">
+        <!-- <option value="">Select</option> -->
+        <option value="lahore">Lahore</option>
+        <option value="okara">Okara</option>
+        <option value="fsd">Fsd</option>
+      </select>
+    </div>
+
+    signal
+
+    <h2>{{ firstName() }}</h2>
 
   </div>
 </div>
