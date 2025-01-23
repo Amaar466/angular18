@@ -1,15 +1,10 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { AddEmployeeComponent } from './add-employee/add-employee.component';
-import { ListEmployeeComponent } from './list-employee/list-employee.component';
-import { DataBindingComponent } from './data-binding/data-binding.component';
-import { StructuralDirectiveComponent } from './structural-directive/structural-directive.component';
-import { AttributedirectivComponent } from './attributedirectiv/attributedirectiv.component';
+import { RouterLink, RouterOutlet } from '@angular/router';
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, AddEmployeeComponent, ListEmployeeComponent , DataBindingComponent ,StructuralDirectiveComponent,AttributedirectivComponent],
+  imports: [RouterOutlet,RouterLink],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

@@ -1,6 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-structural-directive',
@@ -17,6 +19,10 @@ export class StructuralDirectiveComponent {
   isActive= false;
   selectedState = '';
 
+  constructor(private  router: Router){
+
+  }
+
   cityArray:string[] = ['Lahore', 'Fsd', 'Karchi', 'Okara', 'ISd'];
 
   // object of array
@@ -28,7 +34,10 @@ export class StructuralDirectiveComponent {
     {id:4, name:'Ahsan', city:'Okara', age: 26},
     {id:5, name:'Asim', city:'ISd', age: 28},
   ]
-
+  navigateToAttribute()
+  {
+    this.router.navigateByUrl('/attribute-directive');
+  }
 
 
   showDiv1(){
